@@ -11,7 +11,9 @@ root {
 }
 
 body {
-    font-family: sans-serif, serif
+    font-family: sans-serif, serif;
+    font-weight: bolder;
+    font-size: larger;
 }
 
 P.index {
@@ -44,6 +46,55 @@ IMG.centered {
     display: block;
     margin-left: auto;
     margin-right: auto }
+
+#vertical{ 
+    position:absolute; 
+    top:50%; /* adjust this as needed */     
+    width:100%; 
+    text-align:center;
+} 
+#container {
+    position:relative;
+    height:350px;
+}
+
+.terpButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background-color:#fe1a00;
+	-webkit-border-top-left-radius:20px;
+	-moz-border-radius-topleft:20px;
+	border-top-left-radius:20px;
+	-webkit-border-top-right-radius:20px;
+	-moz-border-radius-topright:20px;
+	border-top-right-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	-moz-border-radius-bottomright:20px;
+	border-bottom-right-radius:20px;
+	-webkit-border-bottom-left-radius:20px;
+	-moz-border-radius-bottomleft:20px;
+	border-bottom-left-radius:20px;
+	text-indent:0;
+	border:1px solid #d83526;
+	display:inline-block;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:auto;
+	line-height:50px;
+	width:auto;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #b23e35;
+}.terpButton:hover {
+	background-color:#ce0100;
+}.terpButton:active {
+	position:relative;
+	top:1px;
+}
+/* This button was generated using CSSButtonGenerator.com */
 
 
 
