@@ -11,30 +11,26 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="../css.css"/>
     </h:head>
     <h:body>
+        
         <h:form>
-            <div style="right:15px; top: 15px; position: absolute" >
-                <font style="font-size: larger; font-weight: bolder" >
-                    <a  href="https://login.umd.edu/cas/logout" >logout</a>
-                </font>
-            </div>
-            <div style="right:90px; top: 15px; position: absolute" >
-                <font style="font-size: larger; font-weight: bolder" >
-                    <h:commandLink action="../help" value="help"  />
-                </font>
-            </div>
-            <div style="right:145px; top: 15px; position: absolute" >
-                <font style="font-size: larger; font-weight: bolder" >
-                    <h:commandLink action="../about" value="about"  />
-                </font>
-            </div>
+            
+            <h:commandLink value="logout" action="https://login.umd.edu/cas/logout" style="right:15px; top: 15px; z-index: +1; position: absolute"/>
+            
+            <h:commandLink action="/help" value="help"  style="right:90px; top: 15px; z-index: +1; position: absolute"/>
 
-            <div class="middle" >
-                <p>
-                    Now what are you looking for,
-                </p>
-                <h:commandLink action="forum" value="A Ride"  style="padding-left: 25px; padding-right: 25px;"/>
-                Or
-                <h:commandLink action="post" value="A Passanger" style="padding-left: 25px;" />?
+            <h:commandLink action="/about" value="about" style="right:145px; top: 15px; z-index: +1; position: absolute" />
+
+
+            <div id="container" >
+                <div id="vertical">
+                    <p>
+                        Hello University Student are you, 
+                    </p>
+                    <p><h:commandButton class="terpButton" action="forum" value="Searching for a Ride?"  style="padding-left: 25px; padding-right: 25px;"/>
+                    </p>
+                    <p>Or</p>
+                    <h:commandButton class="terpButton" action="post" value="Looking for a Passanger?" style="padding-left: 25px;" />
+                </div>
             </div>
         </h:form>
     </h:body>
