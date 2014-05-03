@@ -3,13 +3,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
-        <title>Welcome to commute-UM</title>
+        <title>Commute-UM</title>
+        <link rel="stylesheet" type="text/css" href="css.css"/>
     </h:head>
-    <div>
-        <img src="UMD_logo.jpg" />
-    </div>
+
     <h:body>
-            <a href="https://login.umd.edu/cas/login?service=http://localhost:8080/CommuteUM/faces/cas-protected/welcome.xhtml" >login</a>
+
+        <img class="centered" src="UMD_logo.jpg" />
+        <p class="index">
+
+            Welcome to Commute-UM, where you can find a ride to school, or find a passanger to fill an empty seat.
+            Please login with your University of Maryland credentials below.
+            <br/>
+            <br/>
+            <font style="font-size: larger; font-weight: bolder" >
+                <a  class="log" href="https://login.umd.edu/cas/login?service=http://localhost:8080/CommuteUM/faces/cas-protected/welcome.xhtml" >login</a>
+            </font>
+        </p>
     </h:body>
 </html>
 

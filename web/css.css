@@ -1,0 +1,53 @@
+/* 
+    Document   : css
+    Created on : May 2, 2014, 12:47:01 PM
+    Author     : alex
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    font-family: sans-serif, serif
+}
+
+P.index {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 575px;
+}
+P.welcome {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    vertical-align: central;
+    width: 575px;
+}
+
+
+DIV.middle {
+    height: 400px;
+    width:  1000px;
+    margin-right: 0;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+
+IMG.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+
+
+
+
+
+
